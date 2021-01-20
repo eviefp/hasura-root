@@ -1,0 +1,5 @@
+/.envrc
+/.pgdata/
+/mono/
+/pg-client/
+/pool/
