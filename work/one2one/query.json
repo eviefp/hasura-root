@@ -1,0 +1,5 @@
+{
+  "query": "mutation MyMutation {\n  insert_author_one(object: {name: \"Vlad\", detail: {data: {email: \"vlad@vlad.io\"}}}) {\n    name\n    detail {\n      email\n    }\n  }\n}\n",
+  "variables": null,
+  "operationName": "MyMutation"
+}

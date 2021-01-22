@@ -1,0 +1,17 @@
+{
+  "type": "bulk",
+  "source": "default",
+  "args": [
+    {
+      "type": "pg_drop_relationship",
+      "args": {
+        "table": {
+          "name": "author",
+          "schema": "public"
+        },
+        "relationship": "detail",
+        "source": "default"
+      }
+    }
+  ]
+}

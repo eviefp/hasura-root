@@ -1,0 +1,29 @@
+{
+  "type": "bulk",
+  "source": "default",
+  "args": [
+    {
+      "type": "pg_create_object_relationship",
+      "args": {
+        "source": "default",
+        "name": "detail",
+        "table": {
+          "name": "author",
+          "schema": "public"
+        },
+        "using": {
+          "manual_configuration": {
+            "remote_table": {
+              "name": "author_detail",
+              "schema": "public"
+            },
+            "column_mapping": {
+              "id": "id"
+            },
+           "insert_order": "after_parent"
+          }
+        }
+      }
+    }
+  ]
+}
