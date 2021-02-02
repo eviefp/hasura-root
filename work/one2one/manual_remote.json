@@ -1,0 +1,23 @@
+{
+  "type": "bulk",
+  "source": "default",
+  "args": [
+    {
+      "type": "pg_create_object_relationship",
+      "args": {
+        "source": "default",
+        "name": "detail",
+        "table": {
+          "name": "author",
+          "schema": "public"
+        },
+        "using": {
+          "foreign_key_constraint_on": {
+            "table": "author_detail",
+            "column": "id"
+	  }
+        }
+      }
+    }
+  ]
+}
