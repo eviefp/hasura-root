@@ -20,7 +20,7 @@ let
     ];
 
   testDeps =
-    [
+    [ pkgs.python3
     ];
 
   projectDeps = consoleDeps ++ serverDeps ++ testDeps;
