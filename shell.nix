@@ -17,6 +17,8 @@ let
       pkgs.libkrb5
       pkgs.openssl
       pkgs.postgresql
+      pkgs.libiodbc
+      pkgs.freetds
     ];
 
   testDeps =
