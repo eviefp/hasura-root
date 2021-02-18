@@ -1,0 +1,10 @@
+{
+  "type": "mssql_track_table",
+  "args": {
+      "table": {
+          "name": "test",
+          "schema": "dbo"
+      },
+      "source": "mssql_test"
+  }
+}

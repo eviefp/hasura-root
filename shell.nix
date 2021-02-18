@@ -17,8 +17,9 @@ let
       pkgs.libkrb5
       pkgs.openssl
       pkgs.postgresql
-      pkgs.libiodbc
       pkgs.freetds
+      pkgs.unixODBC
+      pkgs.unixODBCDrivers.msodbcsql17
     ];
 
   testDeps =

@@ -1,0 +1,11 @@
+{
+  "type": "mssql_add_source",
+  "args": {
+    "name": "mssql_test",
+    "configuration": {
+        "connection_info": {
+            "connection_string": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=127.0.0.1;Uid=SA;Pwd=hasuraMSSQL1"
+        }
+    }
+  }
+}
