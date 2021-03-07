@@ -1,0 +1,27 @@
+{
+  "type": "bulk",
+  "source": "default",
+  "args": [
+    {
+      "type": "pg_create_object_relationship",
+      "args": {
+        "name": "class",
+        "table": {
+          "name": "student"
+        },
+        "using": {
+          "manual_configuration": {
+            "remote_table": {
+              "name": "class"
+            },
+            "column_mapping": {
+              "class_grade": "grade",
+              "class_section": "section"
+            }
+          }
+        },
+        "source": "default"
+      }
+    }
+  ]
+}

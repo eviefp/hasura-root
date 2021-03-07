@@ -1,0 +1,29 @@
+{
+  "type": "bulk",
+  "source": "mssql_test",
+  "args": [
+    {
+      "type": "mssql_create_object_relationship",
+      "args": {
+        "name": "class",
+        "table": {
+          "name": "student",
+          "schema": "dbo"
+        },
+        "using": {
+          "manual_configuration": {
+            "remote_table": {
+              "name": "class",
+              "schema": "dbo"
+            },
+            "column_mapping": {
+              "class_grade": "grade",
+              "class_section": "section"
+            }
+          }
+        },
+        "source": "mssql_test"
+      }
+    }
+  ]
+}
