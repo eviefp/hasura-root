@@ -2,7 +2,7 @@
   "type": "mssql_track_table",
   "args": {
       "table": {
-          "name": "author",
+          "name": "student",
           "schema": "dbo"
       },
       "source": "mssql_test"

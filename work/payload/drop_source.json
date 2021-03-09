@@ -1,0 +1,7 @@
+{
+  "type": "mssql_drop_source",
+  "args": {
+    "name": "mssql_test",
+    "cascade": false
+  }
+}
