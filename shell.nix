@@ -66,4 +66,5 @@ in
     inherit
       (import ./exports.nix)
       PGHOST PGPORT PGDATABASE PGUSER PGPASSWORD DATABASE_URL;
+    LD_LIBRARY_PATH="${pkgs.unixODBC}/lib:${pkgs.zlib}/lib";
   }
