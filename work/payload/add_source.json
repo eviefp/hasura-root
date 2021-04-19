@@ -1,10 +1,10 @@
 {
-  "type": "mssql_add_source",
+  "type": "citus_add_source",
   "args": {
-    "name": "mssql_test",
+    "name": "citus_test",
     "configuration": {
         "connection_info": {
-            "connection_string": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=127.0.0.1;Uid=SA;Pwd=hasuraMSSQL1"
+            "database_url": "postgres://postgres:hasuraCITUS2@127.0.0.1:65432/postgres"
         }
     }
   }

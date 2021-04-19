@@ -1,10 +1,10 @@
 {
-  "type": "mssql_track_table",
+  "type": "citus_track_table",
   "args": {
       "table": {
-          "name": "student",
-          "schema": "dbo"
+          "name": "band",
+          "schema": "public"
       },
-      "source": "mssql_test"
+      "source": "citus_test"
   }
 }
