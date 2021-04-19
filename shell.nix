@@ -16,7 +16,6 @@ let
       pkgs.postgresql
       pkgs.libkrb5
       pkgs.openssl
-      pkgs.postgresql
       pkgs.freetds
       pkgs.unixODBC
       pkgs.unixODBCDrivers.msodbcsql17
