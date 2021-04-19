@@ -1,0 +1,17 @@
+{
+    "type" : "citus_create_insert_permission",
+    "args" : {
+        "table" : "band",
+        "source": "citus_test",
+        "role" : "user",
+        "permission" : {
+            "check" : {
+                "id" : "X-HASURA-USER-ID"
+            },
+            "set":{
+                "id" : "X-HASURA-USER-ID"
+            },
+            "columns":["name","id", "genre"]
+        }
+    }
+}
