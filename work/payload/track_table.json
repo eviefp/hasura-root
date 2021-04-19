@@ -2,8 +2,8 @@
   "type": "citus_track_table",
   "args": {
       "table": {
-          "name": "test",
-          "schema": "z"
+          "name": "student",
+          "schema": "dbo"
       },
       "source": "citus_test"
   }

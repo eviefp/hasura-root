@@ -1,0 +1,10 @@
+{
+  "type": "pg_track_table",
+  "args": {
+      "table": {
+          "name": "x",
+          "schema": "public"
+      },
+      "source": "default"
+  }
+}

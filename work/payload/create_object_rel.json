@@ -1,0 +1,1 @@
+{"type":"bulk","source":"default","resource_version":33,"args":[{"type":"citus_create_object_relationship","args":{"name":"genreByGenre","table":{"name":"band","schema":"public"},"using":{"foreign_key_constraint_on":"genre"},"source":"citus_test"}}]}
