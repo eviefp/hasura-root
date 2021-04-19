@@ -1,7 +1,7 @@
 {
-  "type": "mssql_drop_source",
+  "type": "citus_drop_source",
   "args": {
-    "name": "mssql_test",
+    "name": "citus_test",
     "cascade": false
   }
 }

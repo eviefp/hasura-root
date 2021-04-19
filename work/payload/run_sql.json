@@ -1,0 +1,1 @@
+{"type":"bulk","source":"citus_test","args":[{"type":"citus_run_sql","args":{"source":"citus_test","sql":"SET LOCAL statement_timeout = 10000;","cascade":false,"read_only":false}},{"type":"citus_run_sql","args":{"source":"citus_test","sql":"SELECT 1;","cascade":false,"read_only":false}}]}
