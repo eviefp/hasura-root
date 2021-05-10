@@ -1,0 +1,13 @@
+{
+    "type": "pg_create_object_relationship",
+    "args": {
+        "table": "servers",
+        "name": "pdata",
+        "using": {
+            "foreign_key_constraint_on" : {
+                "table": "patch_data",
+                "columns": [ "serverid", "serverpatch" ]
+            }
+        }
+    }
+}

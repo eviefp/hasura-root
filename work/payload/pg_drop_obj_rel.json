@@ -1,0 +1,7 @@
+{
+    "type": "pg_drop_relationship",
+    "args": {
+        "table": "author",
+        "relationship": "dets"
+    }
+}

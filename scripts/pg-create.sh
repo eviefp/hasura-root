@@ -14,7 +14,9 @@ unset PGUSER PGPASSWORD
 initdb -D .pgdata
 
 echo "unix_socket_directories = '$(mktemp -d)'" >> .pgdata/postgresql.conf
+echo "listen_addresses = '*'" >> .pgdata/postgresql.conf
 echo "log_statement = all" >> .pgdata/postgresql.conf
+echo "host all all 0.0.0.0/0 trust" >> .pgdata/pg_hba.conf
 
 # TODO: port
 pg_ctl -D ".pgdata" -w start || (echo pg_ctl failed; exit 1)
