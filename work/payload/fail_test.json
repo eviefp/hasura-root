@@ -1,0 +1,27 @@
+{
+    "type": "bulk",
+    "args": [
+	{ "type": "citus_run_sql",
+	"args": {
+    	  "source": "citus",
+    	  "sql": "
+            create table post (
+              id serial PRIMARY KEY,
+              title TEXT,
+              content TEXT
+            );
+            create function search_posts(search text)
+            returns setof post as $$
+                select *
+                from post
+                where
+                title ilike ('%' || search || '%') or
+                content ilike ('%' || search || '%')
+            $$ language sql stable;
+      insert into post (title, content)
+      values
+      ('post by hasura', 'content for post'),
+      ('post by another', 'content for another post'); "
+	} }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "pg_create_object_relationship",
+    "args": {
+        "table": "author",
+        "name": "details",
+        "using": {
+            "foreign_key_constraint_on" : {
+                "table": "author_detail",
+                "column": "id"
+            }
+        }
+    }
+}
