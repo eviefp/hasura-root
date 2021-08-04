@@ -19,6 +19,11 @@ let
       pkgs.freetds
       pkgs.unixODBC
       pkgs.unixODBCDrivers.msodbcsql17
+      pkgs.pcre
+      pkgs.pcre.dev
+      pkgs.zstd
+      pkgs.zstd.dev
+      pkgs.libmysqlclient
     ];
 
   testDeps =
@@ -65,5 +70,5 @@ in
     inherit
       (import ./exports.nix)
       PGHOST PGPORT PGDATABASE PGUSER PGPASSWORD DATABASE_URL;
-    LD_LIBRARY_PATH="${pkgs.unixODBC}/lib:${pkgs.zlib}/lib";
+    LD_LIBRARY_PATH="${pkgs.unixODBC}/lib:${pkgs.zlib}/lib:${pkgs.pcre.out}/lib:${pkgs.zstd.out}/lib";
   }
