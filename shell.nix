@@ -24,6 +24,7 @@ let
       pkgs.zstd
       pkgs.zstd.dev
       pkgs.libmysqlclient
+      pkgs.docker-compose
     ];
 
   testDeps =
