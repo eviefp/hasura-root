@@ -1,0 +1,18 @@
+{
+  "type": "pg_create_remote_relationship",
+  "args": {
+    "source": "default",
+    "table": "artist",
+    "name": "palbum",
+    "definition": {
+      "to_source": {
+        "source": "sqlserver",
+        "table": "album",
+        "relationship_type": "object",
+        "field_mapping": {
+          "id": "artist_id"
+        }
+      }
+    }
+  }
+}

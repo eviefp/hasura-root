@@ -3,13 +3,14 @@ let
   # Do not touch this part.
   sources = import ./nix/sources.nix;
   pkgs = import sources.nixpkgs { };
+  # This is supposed to be my dotfiles repository.
   common = import ../dotfiles/dev-shell/haskell;
 
   # TODO: Test dev.sh and add deps as needed.
   # You can remove anything from here if you'd rather manage it.
   consoleDeps =
     [
-      pkgs.nodejs
+      pkgs.nodejs-12_x
       pkgs.google-cloud-sdk
     ];
 
@@ -30,7 +31,7 @@ let
 
   testDeps =
     [
-      pkgs.python3
+      pkgs.python39Full
       pkgs.libffi
     ];
 
